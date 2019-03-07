@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('job','JobController@catchLocal');
+Route::get('job/local','JobController@getLocal');
